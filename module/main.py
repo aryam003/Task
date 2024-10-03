@@ -1,7 +1,7 @@
+
 from login import *
 from admin import *
 from user import *
-emp=[{'id':1,'name':'name','age':0,'salary':0,'place':'place','dob':2/12/23,'passw':'www'}]
 
 while True:
     print('''
@@ -37,9 +37,9 @@ while True:
             print("invalied uname or passw")
         elif f==2: 
             while True:
-                if user['date_of_birth']==user['password']:
-                    password=input('enter a new password')
-                    user['password']=password
+                if user['date_of_birth']==user['passw']:
+                    passw=input('enter a new password')
+                    user['password']=passw
                 else:
                     print('''
                         1.view profile
