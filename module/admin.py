@@ -1,4 +1,7 @@
-emp=[{'id':1,'name':'name','age':0,'salary':0,'place':'place','dob':2/12/23,'passw':2/12/23}]
+# from main import emp
+
+emp=[{'id':1,'name':'name','age':0,'salary':0,'place':'place','dob':3/3/23,'passw':'www'}]
+
 def add_emp():
     id=int(input("enter id:"))
     f1=0
