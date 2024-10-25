@@ -1,12 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #eef2f0;
+    background-color: #a1b4f0;
     margin: 0;
     padding: 20px;
 }
 
 form {
-    background-color: #e5f0eb;
+    background-color: #e4e6f8;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -17,14 +17,14 @@ form input {
     width: 60%;
     padding: 12px;
     margin: 8px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #0c14e6;
     border-radius: 5px;
     box-sizing: border-box;
 }
 
 
 form input:hover {
-    background-color: #d5eae9;
+    background-color: #bab5e7;
 }
 
 table {
@@ -34,13 +34,14 @@ table {
 }
 
 th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #4a3ac6;
     padding: 10px;
     text-align: left;
+    
 }
 
 th {
-    background-color: #ea8fdc;
+    background-color: #11123d;
     color: white;
 }
 
@@ -49,7 +50,7 @@ tr {
 }
 
 tr:hover {
-    background-color: #f1f1f1;
+    background-color: #827fbd;
 }
 
 a {
