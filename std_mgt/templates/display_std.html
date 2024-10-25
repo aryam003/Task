@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+</head>
+<body>
+    <form action="add" method="post">
+        {% csrf_token %}
+        <input type="number" placeholder="roll_no" name="roll_no">
+        <input type="text" placeholder="name" name="name" >
+        <input type="email" placeholder="email" name="email" >
+        <input type="tel" placeholder="ph_no" name="ph_no" >
+        <input type="number" placeholder="registration_number" name="registration_number" >
+        <input type="text" placeholder="date_of_birth(YYYY-MM-DD)" name="date_of_birth">
+        <input type="text" placeholder="address" name="address">
+        <input type="submit" value="add">
+    </form>
+    <table>
+        <tr>
+            <th>roll_no</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>phone no</th>
+            <th>registration_number</th>
+            <th>date_of_birth</th>
+            <th>address</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        {% for std in data %}
+        <tr>
+            <td>{{std.roll_no}}</td>
+            <td>{{std.name}}</td>
+            <td>{{std.email}}</td>
+            <td>{{std.ph_no}}</td>
+            <td>{{std.registration_number}}</td>
+            <td>{{std.date_of_birth}}</td>
+            <td>{{std.address}}</td>
+            <td><a href="edit_std/{{std.pk}}">Edit</a></td>
+            <td><a href="delete_std/{{std.pk}}">Delete</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
